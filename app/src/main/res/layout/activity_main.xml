@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Insira o Dia de seu Nascimento"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Insira o Mês de seu Nascimento"
+        android:inputType="number"
+        android:layout_below="@id/et_dia"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_ano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Insira o Ano de seu Nascimento"
+        android:inputType="number"
+        android:layout_below="@id/et_mes"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular sua Idade em Anos"
+        android:layout_below="@id/et_ano"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/btn_calcular"/>
+
+</RelativeLayout>
